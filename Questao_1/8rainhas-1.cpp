@@ -3,7 +3,6 @@
 #include <cstdlib>
 #include <ctime>
 #include <chrono>
-#include <locale.h>
 
 using namespace std;
 using namespace std::chrono;
@@ -80,8 +79,6 @@ void imprimirTabuleiro(const vector<int>& tabuleiro) {
 int main() {
 
     int iteracoes;
-
-    setlocale(LC_ALL, "Portuguese");
     
     // Inicio do calculo do tempo
     auto inicio = high_resolution_clock::now();
